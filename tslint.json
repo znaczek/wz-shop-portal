@@ -16,6 +16,9 @@
     "deprecation": {
       "severity": "warn"
     },
+    "no-implicit-dependencies": [true, ["@common", "@modules", "~"]],
+    "no-submodule-imports": [true, "@common", "@modules", "~"],
+
     "import-blacklist": [true, "rxjs/Rx"],
     "interface-name": false,
     "max-classes-per-file": false,
@@ -40,6 +43,7 @@
     "object-literal-sort-keys": false,
     "ordered-imports": false,
     "quotemark": [true, "single"],
-    "trailing-comma": false
+    "trailing-comma": false,
+    "jsx-no-multiline-js": false
   }
 }

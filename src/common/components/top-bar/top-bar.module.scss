@@ -1,0 +1,17 @@
+@import 'base.scss';
+
+$content-height: 2rem;
+
+.topBar {
+  position: fixed;
+  height: $content-height;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $gutter;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.75);
+  background: $white;
+}
