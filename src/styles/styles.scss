@@ -2,13 +2,44 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=latin-ext');
 
 @import 'base.scss';
+@import 'overrides/overrides';
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
 
 html {
-  font-size: 16px;
+  font-size: $font-size-base;
   font-family: 'Open Sans', sans-serif;
 }
 
 body {
   background: $background-color;
   overflow: scroll;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: $gutter/2;
+}
+
+a {
+  &, &:visited, &:hover, &:active {
+    text-decoration: none;
+    color: $link-color;
+  }
+}
+
+h1, h2, h3, h4 {
+  margin-top: 0;
+}
+
+.disabled {
+  cursor: default;
+  opacity: 0.5;
 }

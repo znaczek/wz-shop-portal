@@ -1,0 +1,28 @@
+@import 'base.scss';
+
+$height: $font-size-base + 7px;
+
+.paginator {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.paginatorInput {
+  width: 50px;
+}
+
+.arrow {
+  display: flex;
+  height: $height;
+  width: $height;
+  justify-content: center;
+  align-items: center;
+  font-size: $height * 1.5;
+
+  span {
+    display: block;
+    height: $height;
+    line-height: 0.5;
+  }
+}

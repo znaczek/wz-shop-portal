@@ -1,0 +1,7 @@
+@import 'base.scss';
+
+.productsBrowser {
+  display: grid;
+  grid-gap: $gutter;
+  grid-template-columns: 300px auto;
+}

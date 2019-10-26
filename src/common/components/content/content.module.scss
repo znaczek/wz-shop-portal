@@ -1,6 +1,7 @@
 @import 'base.scss';
 
 .content {
-    margin-top: $top-bar-height;
-    padding: $gutter;
+  margin: $top-bar-height auto 0;
+  padding: $gutter;
+  max-width: 1200px;
 }

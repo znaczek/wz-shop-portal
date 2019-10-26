@@ -1,0 +1,59 @@
+div.react-select__control {
+  min-height: 0;
+  height: $control-height;
+  border-radius: 0;
+}
+
+div.react-select__value-container {
+  padding: 0 0.5rem;
+  font-size: $font-size-base;
+  line-height: 1;
+  min-width: 50px;
+}
+
+span.react-select__indicator-separator {
+  margin: 0;
+}
+
+div.react-select__placeholder, div.react-select__single-value {
+  &+div {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.react-select__indicator {
+  padding: 0;
+  position: relative;
+  height: 1rem;
+  width: 1.5rem;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  svg {
+    display: none;
+  }
+}
+
+div.react-select__menu {
+  margin-top: 0;
+  border-radius: 0;
+}
+
+div.react-select__menu-list {
+  padding: 0;
+}
+
+div.react-select__option {
+  padding: 5px 12px;
+}

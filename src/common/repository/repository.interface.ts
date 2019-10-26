@@ -3,7 +3,7 @@ import {ApiData} from './api-data.interface';
 import {Reducer} from 'redux';
 
 export interface RepositoryInterface<T, P, S = T> {
-  useEffect: (payload: P) => [ApiData<S>, RepositoryComponentActions<T, P>];
+  useEffect: (payload: P, shouldPerformCall: boolean) => [ApiData<S>, RepositoryComponentActions<T, P>];
   reducer: Reducer<ApiData<T> | undefined, ActionInterface<T | P>>;
 }
 

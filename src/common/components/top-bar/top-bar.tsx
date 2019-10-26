@@ -9,7 +9,6 @@ export const TopBar = () => {
         <div className={styles.topBar}>
             <nav>
                 <Link to='/'>BRAND</Link>
-                <Link to='/products'>Products</Link>
             </nav>
             <SearchBar/>
             <Menu/>
